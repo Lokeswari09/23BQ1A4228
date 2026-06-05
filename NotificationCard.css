@@ -1,0 +1,93 @@
+.notification-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.notification-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-color: #667eea;
+}
+
+.notification-card.top-priority {
+  background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+  border-left: 4px solid #ff4757;
+}
+
+.card-rank {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category-badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.message {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 8px 0;
+}
+
+.priority-badge {
+  display: inline-block;
+  background: #ff4757;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .notification-card {
+    padding: 12px;
+    gap: 10px;
+  }
+  .card-rank {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  .message {
+    font-size: 0.85rem;
+  }
+}

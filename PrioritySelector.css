@@ -1,0 +1,36 @@
+.priority-selector {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #f7f9fc;
+  border-radius: 12px;
+}
+
+.selector-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.selector-dropdown {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .selector-label {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .selector-dropdown {
+    width: 100%;
+  }
+}
